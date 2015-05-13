@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <servlet>
+    <servlet-name>Chapter 1 Servlet</servlet-name>
+    <servlet-class>com.jacobo.chp1.Ch1Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Chapter 1 Servlet</servlet-name>
+    <url-pattern>/HeadFirst/Ch1Servlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Chapter 3 Beer</servlet-name>
+    <servlet-class>com.jacobo.chp3.SelectBeer</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Chapter 3 Beer</servlet-name>
+    <url-pattern>/HeadFirst/SelectBeer.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Chapter 3 Beer2</servlet-name>
+    <servlet-class>com.jacobo.chp3.SelectBeer2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Chapter 3 Beer2</servlet-name>
+    <url-pattern>/HeadFirst/SelectBeer2.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Chapter 3 Beer3</servlet-name>
+    <servlet-class>com.jacobo.chp3.SelectBeer3</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Chapter 3 Beer3</servlet-name>
+    <url-pattern>/HeadFirst/SelectBeer3.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Chapter 3 Beer4</servlet-name>
+    <servlet-class>com.jacobo.chp3.SelectBeer4</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Chapter 3 Beer4</servlet-name>
+    <url-pattern>/HeadFirst/SelectBeer4.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Chapter 3 Beer5</servlet-name>
+    <servlet-class>com.jacobo.chp3.SelectBeer5</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Chapter 3 Beer5</servlet-name>
+    <url-pattern>/HeadFirst/SelectBeer5.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Chapter 4</servlet-name>
+    <servlet-class>com.jacobo.chp4.CodeReturn</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Chapter 4</servlet-name>
+    <url-pattern>/redireccion.do</url-pattern>
+  </servlet-mapping>
+  <context-param>
+    <param-name>parametroContexto1</param-name>
+    <param-value>valor 1</param-value>
+  </context-param>
+  <context-param>
+  	 <param-name>breed</param-name>
+    <param-value>guau</param-value>
+  </context-param>
+  <servlet>
+    <servlet-name>Chapter 4 Init</servlet-name>
+    <servlet-class>com.jacobo.chp4.ParametroInicio</servlet-class>
+    <init-param>
+      <param-name>inicio1</param-name>
+      <param-value>inicio1</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Chapter 4 Init</servlet-name>
+    <url-pattern>/ParametroInicio.do</url-pattern>
+  </servlet-mapping>
+  <listener>
+  	<listener-class>com.jacobo.chp4.DogListener</listener-class>
+  </listener>
+</web-app>
