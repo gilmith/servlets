@@ -61,7 +61,7 @@
     <param-value>valor 1</param-value>
   </context-param>
   <context-param>
-  	 <param-name>breed</param-name>
+    <param-name>breed</param-name>
     <param-value>guau</param-value>
   </context-param>
   <servlet>
@@ -77,6 +77,61 @@
     <url-pattern>/ParametroInicio.do</url-pattern>
   </servlet-mapping>
   <listener>
-  	<listener-class>com.jacobo.chp4.DogListener</listener-class>
+    <listener-class>com.jacobo.chp4.DogListener</listener-class>
   </listener>
+  <listener>
+    <listener-class>com.jacobo.chp4.listeners.ListenerSesion</listener-class>
+  </listener>
+  <listener>
+    <listener-class>com.jacobo.chp4.listeners.ListenerCambioAtributo</listener-class>
+  </listener>
+  <servlet>
+    <servlet-name>Chapter 4 Listener</servlet-name>
+    <servlet-class>com.jacobo.chp4.InicioSession</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Chapter 4 Listener</servlet-name>
+    <url-pattern>/HeadFirst/InicioSession.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Chapter 4 Request Listener</servlet-name>
+    <servlet-class>com.jacobo.chp4.Beer8</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Chapter 4 Request Listener</servlet-name>
+    <url-pattern>/HeadFirst/Beer8.do</url-pattern>
+  </servlet-mapping>
+  <listener>
+    <listener-class>com.jacobo.chp4.listeners.ListenerRequest</listener-class>
+  </listener>
+  <listener>
+    <listener-class>com.jacobo.chp4.listeners.ListenerRequestCambio</listener-class>
+  </listener>
+  <servlet>
+    <servlet-name>Chapter 5 sigue peticion</servlet-name>
+    <servlet-class>com.jacobo.chp5.Peticion1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Chapter 5 sigue peticion</servlet-name>
+    <url-pattern>/HeadFirst/Peticion1.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Chapter 5 siguiente peticion</servlet-name>
+    <servlet-class>com.jacobo.chp5.Peticion2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Chapter 5 siguiente peticion</servlet-name>
+    <url-pattern>/HeadFirst/Peticion2.do</url-pattern>
+  </servlet-mapping>
+  <session-config>
+    <session-timeout>2</session-timeout>
+  </session-config>
+  <servlet>
+  	<servlet-name>Chapter 5 sigue cookie</servlet-name>
+  	<servlet-class>com.jacobo.chp5.SigueCookie</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Chapter 5 sigue cookie</servlet-name>
+  	<url-pattern>/HeadFirst/SigueCookie.do</url-pattern>
+  </servlet-mapping>
 </web-app>

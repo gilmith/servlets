@@ -13,8 +13,8 @@
 <h1 align="center">Beer Recomendations</h1>
 <!-- aqui le incrusto el codigo java -->
 <%
-	List styles = (List)request.getAttribute("styles");
-	Iterator it = styles.iterator();
+	List<String> styles = (List<String>)request.getAttribute("styles");
+	Iterator<String> it = styles.iterator();
 	while(it.hasNext()){
 		out.println("<br> try : " + it.next());
 	}
